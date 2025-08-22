@@ -17,24 +17,25 @@ Ich will drei verschiedene API's benutzen und zwei von denen müssen irgendwie z
 
 ## 22.8
 
-- [ ] .NET MAUI Projekt starten
+- [ ] .NET MAUI Projekt starten und alles mit GitHub verbinden (Bis 29.8 erledigen)
 - [ ] Verbindung zur Google Studio AI API einrichten.
 
 
-✍️ Heute habe ich... (50-100 Wörter)
+✍️ Heute habe ich probleme mit der erstellung von .NET MAUI gehabt. Da wir das noch nicht im Modul 335 hatten, wusste ich nicht genau wie das geht. Also verschiebe ich alle Arbeitspakete um eins weiter. (50-100 Wörter)
 
 ☝️ Vergessen Sie nicht, einen ersten Code und Skizze auf github hochzuladen!
 
 ## 29.8
 
-- [ ] Arbeitspaket 1
-- [ ] Arbeitspaket 2
-- [ ] Arbeitspaket 3 
-- [ ] Arbeitspaket 4
+- [ ] Verbindung zur Google Studio AI API einrichten.
+- [ ] Eine leere Ansicht für die Charakter-Erstellung machen.
+- [ ] Textfelder einfügen für Namen und weitere Infos.
+- [ ] Versuchen die DnD-Character API zu verbinden.
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
 ☝️ Vergessen Sie nicht, Ihren Code auf github hochzuladen
+
 
 
 
