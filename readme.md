@@ -8,7 +8,7 @@
 Ich entwickle eine, KI-gestützte mobile App, die das Erstellen von Dungeons & Dragons-Charakteren vereinfacht und Spielern direkt in der App hilfreiche Informationen liefert.
 
 3. Erklären Sie, welche technischen Herausforderungen Sie in Ihrem Projekt erwarten.
-Ich habe im plan drei verschiedene API's zu benutzen und zwei von denen müssen irgendwie zusammenarbeiten.
+Ich will drei verschiedene API's benutzen und zwei von denen müssen irgendwie zusammenarbeiten (function calling).
 
 3. Beschreiben Sie, welche nicht-technischen Aspekte Sie in diesem Projekt besonders üben möchten.
    UX vielleicht? 
@@ -34,4 +34,5 @@ Ich habe im plan drei verschiedene API's zu benutzen und zwei von denen müssen 
 ✍️ Heute habe ich... (50-100 Wörter)
 
 ☝️ Vergessen Sie nicht, Ihren Code auf github hochzuladen
+
 
