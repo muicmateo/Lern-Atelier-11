@@ -5,14 +5,19 @@
 ## Grob-Planung
 
 1. Erklären Sie Ihre Projekt-Idee in einem Satz, als müssen Sie einen Investor davon überzeugen.
-2. Erklären Sie, welche technischen Herausforderungen Sie in Ihrem Projekt erwarten.
+Ich entwickle eine, KI-gestützte mobile App, die das Erstellen von Dungeons & Dragons-Charakteren vereinfacht und Spielern direkt in der App hilfreiche Informationen liefert.
+
+3. Erklären Sie, welche technischen Herausforderungen Sie in Ihrem Projekt erwarten.
+Ich habe im plan drei verschiedene API's zu benutzen und zwei von denen müssen irgendwie zusammenarbeiten.
+
 3. Beschreiben Sie, welche nicht-technischen Aspekte Sie in diesem Projekt besonders üben möchten.
+   UX vielleicht? 
 4. Wie unterscheidet sich dieses Projekt von Ihrem Projekt in 335; und wo ergänzen sich diese Projekte?
+   Für das M335 Projekt habe ich noch nichts geplant. Aber ich werde sicher etwas komplett anderes machen.
 
 ## 22.8
 
-- [ ] Arbeitspaket 1: Erstellen Sie ein Projekt und beginnen Sie mir ersten Code-Skizzen. Das ist wichtig, Sie müssen heute bereits schon C#-Code hochladen!
-- [ ] Arbeitspaket 2 (Falls Sie den *maker space* besuchen, dann dürfen Sie diesen Punkt löschen. Ansonsten fügen Sie hier ein weiteres AP ein).
+- [ ] Arbeitspaket 1: Erstellen Sie ein Projekt und beginnen Sie mit ersten Code-Skizzen. Das ist wichtig, Sie müssen heute bereits schon C#-Code hochladen!
 - [ ] Arbeitspaket 3
 
 ✍️ Heute habe ich... (50-100 Wörter)
@@ -29,3 +34,4 @@
 ✍️ Heute habe ich... (50-100 Wörter)
 
 ☝️ Vergessen Sie nicht, Ihren Code auf github hochzuladen
+
