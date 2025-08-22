@@ -15,6 +15,11 @@ Ich will drei verschiedene API's benutzen und zwei von denen müssen irgendwie z
 4. Wie unterscheidet sich dieses Projekt von Ihrem Projekt in 335; und wo ergänzen sich diese Projekte?
    Für das M335 Projekt habe ich noch nichts geplant. Aber ich werde sicher etwas komplett anderes machen.
 
+
+<img width="412" height="848" alt="image" src="https://github.com/user-attachments/assets/077f5d9a-04c8-4d64-bb97-efde9193f295" />
+So ungefähr möchte ich das die App aussieht (Das wurde komplett mit AI generiert) 
+
+
 ## 22.8
 
 - [ ] .NET MAUI Projekt starten und alles mit GitHub verbinden (Bis 29.8 erledigen)
@@ -35,6 +40,7 @@ Ich will drei verschiedene API's benutzen und zwei von denen müssen irgendwie z
 ✍️ Heute habe ich... (50-100 Wörter)
 
 ☝️ Vergessen Sie nicht, Ihren Code auf github hochzuladen
+
 
 
 
