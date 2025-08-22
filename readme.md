@@ -17,7 +17,7 @@ Ich will drei verschiedene API's benutzen und zwei von denen müssen irgendwie z
 
 
 <img width="412" height="848" alt="image" src="https://github.com/user-attachments/assets/077f5d9a-04c8-4d64-bb97-efde9193f295" />
-So ungefähr möchte ich das die App aussieht (Das wurde komplett mit AI generiert) 
+So ungefähr möchte ich das die App aussieht (Das wurde komplett mit AI generiert. Ich werde nicht alle features die da sind implementieren) 
 
 
 ## 22.8
@@ -40,6 +40,7 @@ So ungefähr möchte ich das die App aussieht (Das wurde komplett mit AI generie
 ✍️ Heute habe ich... (50-100 Wörter)
 
 ☝️ Vergessen Sie nicht, Ihren Code auf github hochzuladen
+
 
 
 
