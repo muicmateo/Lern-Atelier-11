@@ -17,8 +17,9 @@ Ich will drei verschiedene API's benutzen und zwei von denen müssen irgendwie z
 
 ## 22.8
 
-- [ ] Arbeitspaket 1: Erstellen Sie ein Projekt und beginnen Sie mit ersten Code-Skizzen. Das ist wichtig, Sie müssen heute bereits schon C#-Code hochladen!
-- [ ] Arbeitspaket 3
+- [ ] .NET MAUI Projekt starten
+- [ ] Verbindung zur Google Studio AI API einrichten.
+
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
@@ -34,5 +35,6 @@ Ich will drei verschiedene API's benutzen und zwei von denen müssen irgendwie z
 ✍️ Heute habe ich... (50-100 Wörter)
 
 ☝️ Vergessen Sie nicht, Ihren Code auf github hochzuladen
+
 
 
