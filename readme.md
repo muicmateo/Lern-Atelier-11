@@ -32,7 +32,7 @@ So ungefähr möchte ich das die App aussieht (Das wurde komplett mit AI generie
 
 ## 29.8
 
-- [ ] Als Entwickler möchte ich eine Verbindung zur Google Studio AI API einrichten, damit ich deren Funktionen zur automatischen Generierung von Spielinhalten nutzen kann.
+- [x] Als Entwickler möchte ich eine Verbindung zur Google Studio AI API einrichten, damit ich deren Funktionen zur automatischen Generierung von Spielinhalten nutzen kann.
 - [ ] Als Spieler möchte ich eine Ansicht für die Charakter-Erstellung aufrufen können, damit ich mit der Erstellung eines neuen Charakters beginnen kann.
 - [ ] Als Spieler möchte ich Textfelder für Namen und weitere Informationen sehen, damit ich die grundlegenden Daten meines Charakters eingeben und personalisieren kann.
 - [ ] Als Entwickler möchte ich die D&D-Character API anbinden, damit die Spieler alle Daten aufrufen können.
