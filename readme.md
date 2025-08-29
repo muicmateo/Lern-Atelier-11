@@ -33,16 +33,21 @@ So ungefähr möchte ich das die App aussieht (Das wurde komplett mit AI generie
 ## 29.8
 
 - [x] Als Entwickler möchte ich eine Verbindung zur Google Studio AI API einrichten, damit ich deren Funktionen zur automatischen Generierung von Spielinhalten nutzen kann.
-- [ ] Als Spieler möchte ich eine Ansicht für die Charakter-Erstellung aufrufen können, damit ich mit der Erstellung eines neuen Charakters beginnen kann.
-- [ ] Als Spieler möchte ich Textfelder für Namen und weitere Informationen sehen, damit ich die grundlegenden Daten meines Charakters eingeben und personalisieren kann.
+- [x] Als Spieler möchte ich eine Ansicht für die Charakter-Erstellung aufrufen können, damit ich mit der Erstellung eines neuen Charakters beginnen kann.
+- [x] (nicht ganz gelöst) Als Spieler möchte ich Textfelder für Namen und weitere Informationen sehen, damit ich die grundlegenden Daten meines Charakters eingeben und personalisieren kann.
 - [ ] Als Entwickler möchte ich die D&D-Character API anbinden, damit die Spieler alle Daten aufrufen können.
 
-✍️ Heute habe ich... (50-100 Wörter)
+✍️ Heute habe ich mich entschieden auf Visual Studio zu wechseln weil VSCode zu kompliziert is mit MAUI. Aber weil ich VS schon sehr lange nicht mehr benutzt habe hatte ich sehr viele probleme mit NuGet packages. Dann habe ich die Gemini API integriert, was gut funktionierte. Danach habe ich die UI geändert sodass es mehr wie Fanstasy aussieht. Nachdem funktionierte die API nicht mehr. Die DnD API wird ich erst später integrieren. (50-100 Wörter)
 
 ☝️ Vergessen Sie nicht, Ihren Code auf github hochzuladen
 
 
+## 05.09
 
+- [ ] Als Spieler möchte ich die Rasse und Klasse meines Charakters aus einer Drop-down-Liste auswählen können, damit ich meinen Charakter schnell und einfach nach den offiziellen Regeln definieren kann.
+- [ ] Als Spieler möchte ich die Wahl haben, eine Hintergrundgeschichte entweder selbst zu schreiben oder von einer KI generieren zu lassen, damit ich entweder meine eigene kreative Vision umsetzen oder bei Bedarf schnell Inspiration finden kann.
+- [ ] Als Benutzer möchte ich eine moderne und intuitive Benutzeroberfläche haben, damit ich mich leicht zurechtfinde und die Anwendung gerne benutze.
+- [ ] Als Spieler möchte ich detaillierte Charakteroptionen wie Hintergrund, Fertigkeiten und Talente auswählen können, damit ich meinen Charakter weiter individualisieren und ihn wirklich einzigartig machen kann. 
 
 
 

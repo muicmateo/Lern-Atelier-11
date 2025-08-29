@@ -2,43 +2,103 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModels="clr-namespace:MauiApp1.ViewModels"
+             x:Class="MauiApp1.MainPage"
              x:DataType="viewModels:MainViewModel"
-             x:Class="MauiApp1.MainPage">
+             Shell.NavBarIsVisible="False">
 
-    <ScrollView>
-        <VerticalStackLayout Spacing="15" Padding="20">
-            <Label Text="Gemini AI Prompt" 
-                   FontSize="Large" 
-                   FontAttributes="Bold" 
-                   HorizontalOptions="Center" />
+    <Grid>
+        <!-- Background Image -->
+        <Image Source="parchment.png" Aspect="AspectFill" />
 
-            <Editor Placeholder="Enter your prompt here..."
-                    Text="{Binding Prompt}"
-                    HeightRequest="150"
-                    IsEnabled="{Binding IsBusy, Converter={StaticResource InverseBoolConverter}}"/>
+        <ScrollView>
+            <VerticalStackLayout Padding="30,20" Spacing="15">
 
-            <Button Text="Ask Gemini"
-                    Command="{Binding AskGeminiCommand}"
-                    IsEnabled="{Binding IsGeminiEnabled}"
-                    SemanticProperties.Hint="Asks Gemini the AI a question"/>
+                <Label 
+                    Text="Character Creator"
+                    FontSize="48"
+                    FontFamily="Draconis"
+                    TextColor="#5C4033"
+                    HorizontalOptions="Center" />
 
-            <ActivityIndicator IsVisible="{Binding IsBusy}"
-                               IsRunning="{Binding IsBusy}"
-                               Color="Blue" />
+                <!-- Character Details Section -->
+                <Frame BackgroundColor="#D2B48C" CornerRadius="10" Padding="15" BorderColor="#8B4513" HasShadow="True">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Character Name" FontFamily="Draconis" FontSize="20" TextColor="#5C4033"/>
+                        <Entry Placeholder="Enter your character's name" Text="{Binding CharacterName}" FontFamily="Draconis" BackgroundColor="#F5DEB3" TextColor="#5C4033"/>
 
-            <Label Text="Response:" 
-                   FontSize="Medium" 
-                   FontAttributes="Bold"
-                   IsVisible="{Binding Response, Converter={StaticResource IsStringNotNullOrEmptyConverter}}" />
+                        <Grid ColumnDefinitions="*,*" ColumnSpacing="10">
+                            <VerticalStackLayout Grid.Column="0">
+                                <Label Text="Class" FontFamily="Draconis" FontSize="20" TextColor="#5C4033"/>
+                                <Entry Placeholder="e.g., Fighter" Text="{Binding Class}" FontFamily="Draconis" BackgroundColor="#F5DEB3" TextColor="#5C4033"/>
+                            </VerticalStackLayout>
+                            <VerticalStackLayout Grid.Column="1">
+                                <Label Text="Race" FontFamily="Draconis" FontSize="20" TextColor="#5C4033"/>
+                                <Entry Placeholder="e.g., Elf" Text="{Binding Race}" FontFamily="Draconis" BackgroundColor="#F5DEB3" TextColor="#5C4033"/>
+                            </VerticalStackLayout>
+                        </Grid>
+                    </VerticalStackLayout>
+                </Frame>
 
-            <Frame BackgroundColor="LightGray" 
-                   Padding="10"
-                   IsVisible="{Binding Response, Converter={StaticResource IsStringNotNullOrEmptyConverter}}">
-                <Label Text="{Binding Response}"
-                       FontSize="Small"
-                       LineBreakMode="WordWrap" />
-            </Frame>
-        </VerticalStackLayout>  
-    </ScrollView>
+                <!-- AI Prompt Section -->
+                <Frame BackgroundColor="#D2B48C" CornerRadius="10" Padding="15" BorderColor="#8B4513" HasShadow="True">
+                    <VerticalStackLayout Spacing="10">
+                        <Label 
+                            Text="Generate Backstory"
+                            FontFamily="Draconis"
+                            FontSize="24"
+                            TextColor="#5C4033"
+                            HorizontalOptions="Center"/>
+
+                        <Editor 
+                            x:Name="PromptEditor"
+                            Placeholder="Describe your character..."
+                            Text="{Binding Prompt}"
+                            FontFamily="Draconis"
+                            HeightRequest="150"
+                            BackgroundColor="#F5DEB3"
+                            TextColor="#5C4033"/>
+
+                        <Button 
+                            Text="Generate"
+                            FontFamily="Draconis"
+                            FontSize="22"
+                            Command="{Binding GenerateCommand}"
+                            BackgroundColor="#8B4513"
+                            TextColor="#F5DEB3"
+                            CornerRadius="8"
+                            BorderColor="#5C4033"
+                            BorderWidth="2"
+                            HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Generated Story Section -->
+                <Frame BackgroundColor="#D2B48C" CornerRadius="10" Padding="15" BorderColor="#8B4513" HasShadow="True" IsVisible="{Binding IsStoryGenerated}">
+                    <VerticalStackLayout Spacing="10">
+                        <Label 
+                            Text="Character Backstory"
+                            FontFamily="Draconis"
+                            FontSize="24"
+                            TextColor="#5C4033"
+                            HorizontalOptions="Center"/>
+                        <Label 
+                            Text="{Binding GeneratedStory}"
+                            FontFamily="Draconis"
+                            FontSize="16"
+                            TextColor="#5C4033"
+                            LineBreakMode="WordWrap"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <ActivityIndicator 
+            IsRunning="{Binding IsBusy}"
+            IsVisible="{Binding IsBusy}"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Color="#8B4513"/>
+    </Grid>
 
 </ContentPage>
