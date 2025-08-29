@@ -22,7 +22,7 @@ So ungefähr möchte ich das die App aussieht (Das wurde komplett mit AI generie
 
 ## 22.8
 
-- [ ] .NET MAUI Projekt starten und alles mit GitHub verbinden (Bis 29.8 erledigen)
+- [ ] .NET MAUI Projekt starten und alles mit GitHub verbinden
 - [ ] Verbindung zur Google Studio AI API einrichten.
 
 
@@ -32,10 +32,10 @@ So ungefähr möchte ich das die App aussieht (Das wurde komplett mit AI generie
 
 ## 29.8
 
-- [ ] Verbindung zur Google Studio AI API einrichten.
-- [ ] Eine leere Ansicht für die Charakter-Erstellung machen.
-- [ ] Textfelder einfügen für Namen und weitere Infos.
-- [ ] Versuchen die DnD-Character API zu verbinden.
+- [ ] Als Entwickler möchte ich eine Verbindung zur Google Studio AI API einrichten, damit ich deren Funktionen zur automatischen Generierung von Spielinhalten nutzen kann.
+- [ ] Als Spieler möchte ich eine Ansicht für die Charakter-Erstellung aufrufen können, damit ich mit der Erstellung eines neuen Charakters beginnen kann.
+- [ ] Als Spieler möchte ich Textfelder für Namen und weitere Informationen sehen, damit ich die grundlegenden Daten meines Charakters eingeben und personalisieren kann.
+- [ ] Als Entwickler möchte ich die D&D-Character API anbinden, damit die Spieler alle Daten aufrufen können.
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
