@@ -22,7 +22,7 @@ So ungefähr möchte ich das die App aussieht (Das wurde komplett mit AI generie
 
 ## 22.8
 
-- [ ] .NET MAUI Projekt starten und alles mit GitHub verbinden
+- [x] .NET MAUI Projekt starten und alles mit GitHub verbinden
 - [ ] Verbindung zur Google Studio AI API einrichten.
 
 
