@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:MauiApp1.ViewModels"
+             x:DataType="viewModels:MainViewModel"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="D&amp;D Character Creator"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Entry
+                Placeholder="Enter character name"
+                Text="{Binding CharacterName}" />
+
+            <Label Text="Race:" FontSize="16" FontAttributes="Bold" />
+            <Picker Title="Select a Race"
+                    ItemsSource="{Binding Races}"
+                    SelectedItem="{Binding SelectedRace}"
+                    BackgroundColor="LightGray"
+                    HeightRequest="40" />
+
+            <Label Text="Class:" FontSize="16" FontAttributes="Bold" />
+            <Picker Title="Select a Class"
+                    ItemsSource="{Binding Classes}"
+                    SelectedItem="{Binding SelectedClass}"
+                    BackgroundColor="LightGray"
+                    HeightRequest="40" />
+
+            <Editor
+                Placeholder="Enter any additional details for the backstory..."
+                Text="{Binding Prompt}"
+                AutoSize="TextChanges"
+                MinimumHeightRequest="100" />
+
+            <Button
+                Text="Generate Backstory"
+                Command="{Binding GenerateCommand}"
+                IsEnabled="{Binding IsNotBusy}"
+                HorizontalOptions="Fill" />
+
+            <ActivityIndicator IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}" />
+
+            <Frame BorderColor="Gray" Padding="10" CornerRadius="5" IsVisible="{Binding IsStoryGenerated}">
+                <Label Text="{Binding GeneratedStory}" />
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

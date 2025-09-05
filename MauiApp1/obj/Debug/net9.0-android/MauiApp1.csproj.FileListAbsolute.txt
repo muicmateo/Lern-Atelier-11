@@ -1393,12 +1393,7 @@ C:\Users\cspiv\Desktop\Lern-Atelier-11\MauiApp1\obj\Debug\net9.0-android\android
 C:\Users\cspiv\Desktop\Lern-Atelier-11\MauiApp1\obj\Debug\net9.0-android\android\assets\x86_64\Microsoft.Extensions.Diagnostics.dll
 C:\Users\cspiv\Desktop\Lern-Atelier-11\MauiApp1\obj\Debug\net9.0-android\android\assets\x86_64\Microsoft.Extensions.Http.dll
 C:\Users\cspiv\Desktop\Lern-Atelier-11\MauiApp1\obj\Debug\net9.0-android\android\assets\x86_64\Microsoft.Extensions.Options.ConfigurationExtensions.dll
-C:\Users\cspiv\Desktop\Lern-Atelier-11\MauiApp1\obj\Debug\net9.0-android\android\typemaps.arm64-v8a.ll
-C:\Users\cspiv\Desktop\Lern-Atelier-11\MauiApp1\obj\Debug\net9.0-android\android\environment.arm64-v8a.ll
-C:\Users\cspiv\Desktop\Lern-Atelier-11\MauiApp1\obj\Debug\net9.0-android\android\compressed_assemblies.arm64-v8a.ll
-C:\Users\cspiv\Desktop\Lern-Atelier-11\MauiApp1\obj\Debug\net9.0-android\android\typemaps.arm64-v8a.o
-C:\Users\cspiv\Desktop\Lern-Atelier-11\MauiApp1\obj\Debug\net9.0-android\android\environment.arm64-v8a.o
-C:\Users\cspiv\Desktop\Lern-Atelier-11\MauiApp1\obj\Debug\net9.0-android\android\compressed_assemblies.arm64-v8a.o
-C:\Users\cspiv\Desktop\Lern-Atelier-11\MauiApp1\obj\Debug\net9.0-android\android\marshal_methods.arm64-v8a.o
-C:\Users\cspiv\Desktop\Lern-Atelier-11\MauiApp1\obj\Debug\net9.0-android\android\jni_remap.arm64-v8a.o
-C:\Users\cspiv\Desktop\Lern-Atelier-11\MauiApp1\obj\Debug\net9.0-android\app_shared_libraries\arm64-v8a\libxamarin-app.so
+C:\Users\cspiv\Desktop\Lern-Atelier-11\MauiApp1\obj\Debug\net9.0-android\android\assets\x86_64\Microsoft.Maui.Controls.HotReload.Forms.dll
+C:\Users\cspiv\Desktop\Lern-Atelier-11\MauiApp1\obj\Debug\net9.0-android\android\assets\x86_64\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
+C:\Users\cspiv\Desktop\Lern-Atelier-11\MauiApp1\obj\Debug\net9.0-android\android\assets\x86_64\Microsoft.VisualStudio.DesignTools.TapContract.dll
+C:\Users\cspiv\Desktop\Lern-Atelier-11\MauiApp1\obj\Debug\net9.0-android\android\assets\x86_64\Microsoft.VisualStudio.DesignTools.XamlTapContract.dll

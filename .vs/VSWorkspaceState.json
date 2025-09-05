@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\MauiApp1"
+    "\\MauiApp1",
+    "\\MauiApp1\\ViewModels"
   ],
   "SelectedNode": "\\MauiApp1.sln",
   "PreviewInSolutionExplorer": false

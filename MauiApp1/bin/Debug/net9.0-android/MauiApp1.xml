@@ -8,30 +8,37 @@
             <inheritdoc/>
             <inheritdoc/>
         </member>
-        <member name="P:MauiApp1.ViewModels.MainViewModel.Prompt">
-            <inheritdoc cref="F:MauiApp1.ViewModels.MainViewModel._prompt"/>
+        <member name="P:MauiApp1.ViewModels.MainViewModel.CharacterName">
+            <inheritdoc cref="F:MauiApp1.ViewModels.MainViewModel.characterName"/>
         </member>
-        <member name="P:MauiApp1.ViewModels.MainViewModel.Response">
-            <inheritdoc cref="F:MauiApp1.ViewModels.MainViewModel._response"/>
+        <member name="P:MauiApp1.ViewModels.MainViewModel.SelectedClass">
+            <inheritdoc cref="F:MauiApp1.ViewModels.MainViewModel.selectedClass"/>
+        </member>
+        <member name="P:MauiApp1.ViewModels.MainViewModel.SelectedRace">
+            <inheritdoc cref="F:MauiApp1.ViewModels.MainViewModel.selectedRace"/>
+        </member>
+        <member name="P:MauiApp1.ViewModels.MainViewModel.Prompt">
+            <inheritdoc cref="F:MauiApp1.ViewModels.MainViewModel.prompt"/>
+        </member>
+        <member name="P:MauiApp1.ViewModels.MainViewModel.GeneratedStory">
+            <inheritdoc cref="F:MauiApp1.ViewModels.MainViewModel.generatedStory"/>
         </member>
         <member name="P:MauiApp1.ViewModels.MainViewModel.IsBusy">
-            <inheritdoc cref="F:MauiApp1.ViewModels.MainViewModel._isBusy"/>
+            <inheritdoc cref="F:MauiApp1.ViewModels.MainViewModel.isBusy"/>
         </member>
-        <member name="M:MauiApp1.ViewModels.MainViewModel.OnPromptChanged(System.String)">
-            <summary>Executes the logic for when <see cref="P:MauiApp1.ViewModels.MainViewModel.Prompt"/> just changed.</summary>
-            <param name="value">The new property value that was set.</param>
-            <remarks>This method is invoked right after the value of <see cref="P:MauiApp1.ViewModels.MainViewModel.Prompt"/> is changed.</remarks>
+        <member name="P:MauiApp1.ViewModels.MainViewModel.IsStoryGenerated">
+            <inheritdoc cref="F:MauiApp1.ViewModels.MainViewModel.isStoryGenerated"/>
         </member>
         <member name="M:MauiApp1.ViewModels.MainViewModel.OnIsBusyChanged(System.Boolean)">
             <summary>Executes the logic for when <see cref="P:MauiApp1.ViewModels.MainViewModel.IsBusy"/> just changed.</summary>
             <param name="value">The new property value that was set.</param>
             <remarks>This method is invoked right after the value of <see cref="P:MauiApp1.ViewModels.MainViewModel.IsBusy"/> is changed.</remarks>
         </member>
-        <member name="F:MauiApp1.ViewModels.MainViewModel.askGeminiCommand">
-            <summary>The backing field for <see cref="P:MauiApp1.ViewModels.MainViewModel.AskGeminiCommand"/>.</summary>
+        <member name="F:MauiApp1.ViewModels.MainViewModel.generateCommand">
+            <summary>The backing field for <see cref="P:MauiApp1.ViewModels.MainViewModel.GenerateCommand"/>.</summary>
         </member>
-        <member name="P:MauiApp1.ViewModels.MainViewModel.AskGeminiCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:MauiApp1.ViewModels.MainViewModel.AskGemini"/>.</summary>
+        <member name="P:MauiApp1.ViewModels.MainViewModel.GenerateCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:MauiApp1.ViewModels.MainViewModel.Generate"/>.</summary>
         </member>
         <member name="T:MauiApp1.Resource">
             <summary>
@@ -165,14 +172,26 @@
             for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
             </summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CharacterName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CharacterName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedClass">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedClass" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedRace">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedRace" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Prompt">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Prompt" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Response">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Response" generated properties.</summary>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.GeneratedStory">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "GeneratedStory" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsBusy">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsStoryGenerated">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsStoryGenerated" generated properties.</summary>
         </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
             <summary>
@@ -180,14 +199,26 @@
             for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
             </summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CharacterName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CharacterName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedClass">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedClass" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedRace">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedRace" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Prompt">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Prompt" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Response">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Response" generated properties.</summary>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.GeneratedStory">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "GeneratedStory" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsBusy">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsStoryGenerated">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsStoryGenerated" generated properties.</summary>
         </member>
     </members>
 </doc>

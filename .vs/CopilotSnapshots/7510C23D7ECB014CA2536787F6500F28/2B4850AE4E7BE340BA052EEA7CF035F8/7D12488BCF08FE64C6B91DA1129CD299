@@ -1,0 +1,77 @@
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using MauiApp1.Services;
+using System.Collections.ObjectModel;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MauiApp1.ViewModels;
+
+public partial class MainViewModel : ObservableObject
+{
+    private readonly IGeminiService _geminiService;
+
+    [ObservableProperty]
+    private string characterName;
+
+    [ObservableProperty]
+    private string selectedClass;
+
+    [ObservableProperty]
+    private string selectedRace;
+
+    [ObservableProperty]
+    private string prompt;
+
+    [ObservableProperty]
+    private string generatedStory;
+
+    [ObservableProperty]
+    private bool isBusy;
+
+    [ObservableProperty]
+    private bool isStoryGenerated;
+
+    public ObservableCollection<string> Classes { get; }
+    public ObservableCollection<string> Races { get; }
+
+    public MainViewModel(IGeminiService geminiService)
+    {
+        _geminiService = geminiService;
+        Classes = new ObservableCollection<string>
+        {
+            "Fighter", "Wizard", "Rogue", "Cleric", "Ranger", "Barbarian", "Bard", "Druid", "Monk", "Paladin", "Sorcerer", "Warlock"
+        };
+        Races = new ObservableCollection<string>
+        {
+            "Human", "Elf", "Dwarf", "Halfling", "Dragonborn", "Gnome", "Half-Elf", "Half-Orc", "Tiefling"
+        };
+    }
+
+    [RelayCommand]
+    private async Task Generate()
+    {
+        if (IsBusy) return;
+
+        try
+        {
+            IsBusy = true;
+            IsStoryGenerated = false;
+
+            var promptBuilder = new StringBuilder();
+            promptBuilder.AppendLine("Generate a Dungeons and Dragons character backstory with the following details:");
+            promptBuilder.AppendLine($"Name: {CharacterName}");
+            promptBuilder.AppendLine($"Class: {SelectedClass}");
+            promptBuilder.AppendLine($"Race: {SelectedRace}");
+            promptBuilder.AppendLine("---");
+            promptBuilder.AppendLine(Prompt);
+
+            GeneratedStory = await _geminiService.GetCompletionAsync(promptBuilder.ToString());
+            IsStoryGenerated = !string.IsNullOrWhiteSpace(GeneratedStory);
+        }
+        finally
+        {
+            IsBusy = false;
+        }
+    }
+}

@@ -1,6 +1,9 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using MauiApp1.Services;
+using System.Collections.ObjectModel;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace MauiApp1.ViewModels;
 
@@ -9,51 +12,73 @@ public partial class MainViewModel : ObservableObject
     private readonly IGeminiService _geminiService;
 
     [ObservableProperty]
-    private string _prompt = string.Empty;
+    private string characterName = string.Empty;
 
     [ObservableProperty]
-    private string _response = string.Empty;
+    private string selectedClass = string.Empty;
 
     [ObservableProperty]
-    private bool _isBusy;
+    private string selectedRace = string.Empty;
+
+    [ObservableProperty]
+    private string prompt = string.Empty;
+
+    [ObservableProperty]
+    private string generatedStory = string.Empty;
+
+    [ObservableProperty]
+    private bool isBusy;
+
+    [ObservableProperty]
+    private bool isStoryGenerated;
+
+    public ObservableCollection<string> Classes { get; }
+    public ObservableCollection<string> Races { get; }
+
+    public bool IsNotBusy => !IsBusy;
 
     public MainViewModel(IGeminiService geminiService)
     {
         _geminiService = geminiService;
+        Classes = new ObservableCollection<string>
+        {
+            "Fighter", "Wizard", "Rogue", "Cleric", "Ranger", "Barbarian", "Bard", "Druid", "Monk", "Paladin", "Sorcerer", "Warlock"
+        };
+        Races = new ObservableCollection<string>
+        {
+            "Human", "Elf", "Dwarf", "Halfling", "Dragonborn", "Gnome", "Half-Elf", "Half-Orc", "Tiefling"
+        };
     }
 
-    public bool IsGeminiEnabled => !IsBusy && !string.IsNullOrWhiteSpace(Prompt);
+    partial void OnIsBusyChanged(bool value)
+    {
+        OnPropertyChanged(nameof(IsNotBusy));
+    }
 
     [RelayCommand]
-    private async Task AskGemini()
+    private async Task Generate()
     {
-        if (string.IsNullOrWhiteSpace(Prompt))
-            return;
+        if (IsBusy) return;
 
-        IsBusy = true;
-        Response = "Thinking...";
-        
         try
         {
-            Response = await _geminiService.GetCompletionAsync(Prompt);
-        }
-        catch (Exception ex)
-        {
-            Response = $"Error: {ex.Message}";
+            IsBusy = true;
+            IsStoryGenerated = false;
+
+            var promptBuilder = new StringBuilder();
+            promptBuilder.AppendLine("Generate a Dungeons and Dragons character backstory with the following details:");
+            promptBuilder.AppendLine($"Name: {CharacterName}");
+            promptBuilder.AppendLine($"Class: {SelectedClass}");
+            promptBuilder.AppendLine($"Race: {SelectedRace}");
+            promptBuilder.AppendLine("---");
+            promptBuilder.AppendLine(Prompt);
+
+            GeneratedStory = await _geminiService.GetCompletionAsync(promptBuilder.ToString());
+            IsStoryGenerated = !string.IsNullOrWhiteSpace(GeneratedStory);
         }
         finally
         {
             IsBusy = false;
         }
-    }
-
-    partial void OnPromptChanged(string value)
-    {
-        OnPropertyChanged(nameof(IsGeminiEnabled));
-    }
-
-    partial void OnIsBusyChanged(bool value)
-    {
-        OnPropertyChanged(nameof(IsGeminiEnabled));
     }
 }

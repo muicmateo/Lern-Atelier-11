@@ -42,6 +42,12 @@ public class GeminiService : IGeminiService
             return $"An exception occurred: {ex.Message}";
         }
     }
+
+    public async Task<string> GenerateStoryAsync(string prompt)
+    {
+        // This method can be the same as GetCompletionAsync or have specific story generation logic
+        return await GetCompletionAsync(prompt);
+    }
 }
 
 // Request and Response Models

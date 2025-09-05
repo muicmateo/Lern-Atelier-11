@@ -3,44 +3,59 @@
   "WorkspaceRootPath": "C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|c:\\users\\cspiv\\desktop\\lern-atelier-11\\mauiapp1\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|c:\\users\\cspiv\\desktop\\lern-atelier-11\\mauiapp1\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|c:\\users\\cspiv\\desktop\\lern-atelier-11\\mauiapp1\\mauiapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\mauiapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|c:\\users\\cspiv\\desktop\\lern-atelier-11\\mauiapp1\\services\\geminiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\services\\geminiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|c:\\users\\cspiv\\desktop\\lern-atelier-11\\mauiapp1\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|c:\\users\\cspiv\\desktop\\lern-atelier-11\\mauiapp1\\models\\geminisettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\models\\geminisettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|c:\\users\\cspiv\\desktop\\lern-atelier-11\\mauiapp1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|c:\\users\\cspiv\\desktop\\lern-atelier-11\\mauiapp1\\services\\igeminiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\services\\igeminiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|c:\\users\\cspiv\\desktop\\lern-atelier-11\\mauiapp1\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|c:\\users\\cspiv\\desktop\\lern-atelier-11\\mauiapp1\\services\\geminiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\services\\geminiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\MauiProgram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MauiProgram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|c:\\users\\cspiv\\desktop\\lern-atelier-11\\mauiapp1\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|c:\\users\\cspiv\\desktop\\lern-atelier-11\\mauiapp1\\globalxmlns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\globalxmlns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|c:\\users\\cspiv\\desktop\\lern-atelier-11\\mauiapp1\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|c:\\users\\cspiv\\desktop\\lern-atelier-11\\mauiapp1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cspiv\\AppData\\Local\\Temp\\.vsdbgsrc\\295849ba6c720f32e018bc856c18d329c6ac9310\\MainPage.xaml.sg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\MauiApp1\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MauiApp1\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|c:\\users\\cspiv\\desktop\\lern-atelier-11\\mauiapp1\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\MauiProgram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MauiProgram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|c:\\users\\cspiv\\desktop\\lern-atelier-11\\mauiapp1\\mauiapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\mauiapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|c:\\users\\cspiv\\desktop\\lern-atelier-11\\mauiapp1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|c:\\users\\cspiv\\desktop\\lern-atelier-11\\mauiapp1\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -48,10 +63,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cspiv\\AppData\\Roaming\\Microsoft\\UserSecrets\\f6c0ed4c-971e-4684-a74a-31116ff73cdd\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|c:\\users\\cspiv\\desktop\\lern-atelier-11\\mauiapp1\\services\\igeminiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{335C139B-0B3B-495F-8DB9-EE92C90757AB}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\services\\igeminiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -61,7 +72,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -69,31 +80,71 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
+              "Title": "GlobalXmlns.cs",
+              "DocumentMoniker": "C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\MauiApp1\\GlobalXmlns.cs",
+              "RelativeDocumentMoniker": "MauiApp1\\GlobalXmlns.cs",
+              "ToolTip": "C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\MauiApp1\\GlobalXmlns.cs",
+              "RelativeToolTip": "MauiApp1\\GlobalXmlns.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T11:32:15.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\MauiApp1\\AppShell.xaml",
+              "RelativeDocumentMoniker": "MauiApp1\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\MauiApp1\\AppShell.xaml",
+              "RelativeToolTip": "MauiApp1\\AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-05T11:32:14.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainPage.xaml.sg.cs",
+              "DocumentMoniker": "C:\\Users\\cspiv\\AppData\\Local\\Temp\\.vsdbgsrc\\295849ba6c720f32e018bc856c18d329c6ac9310\\MainPage.xaml.sg.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\295849ba6c720f32e018bc856c18d329c6ac9310\\MainPage.xaml.sg.cs",
+              "ToolTip": "C:\\Users\\cspiv\\AppData\\Local\\Temp\\.vsdbgsrc\\295849ba6c720f32e018bc856c18d329c6ac9310\\MainPage.xaml.sg.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\295849ba6c720f32e018bc856c18d329c6ac9310\\MainPage.xaml.sg.cs [Read Only]",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T11:27:21.63Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\MauiProgram.cs",
               "RelativeDocumentMoniker": "MauiProgram.cs",
               "ToolTip": "C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\MauiProgram.cs",
               "RelativeToolTip": "MauiProgram.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-29T12:55:56.6Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\MauiApp1\\App.xaml",
               "RelativeDocumentMoniker": "MauiApp1\\App.xaml",
               "ToolTip": "C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\MauiApp1\\App.xaml",
               "RelativeToolTip": "MauiApp1\\App.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAIBJwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-29T12:55:41.586Z"
+              "WhenOpened": "2025-08-29T12:55:41.586Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "MauiApp1.csproj",
               "DocumentMoniker": "C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\MauiApp1\\MauiApp1.csproj",
               "RelativeDocumentMoniker": "MauiApp1\\MauiApp1.csproj",
@@ -105,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\MauiApp1\\appsettings.json",
               "RelativeDocumentMoniker": "MauiApp1\\appsettings.json",
@@ -113,7 +164,8 @@
               "RelativeToolTip": "MauiApp1\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-29T12:50:52.741Z"
+              "WhenOpened": "2025-08-29T12:50:52.741Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -123,13 +175,14 @@
               "RelativeDocumentMoniker": "MauiApp1\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
               "ToolTip": "C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\MauiApp1\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
               "RelativeToolTip": "MauiApp1\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAmwD8AAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAcwEQAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-29T12:32:55.551Z"
+              "WhenOpened": "2025-08-29T12:32:55.551Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\MauiApp1\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "MauiApp1\\MainPage.xaml.cs",
@@ -141,28 +194,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\MauiApp1\\MainPage.xaml",
               "RelativeDocumentMoniker": "MauiApp1\\MainPage.xaml",
               "ToolTip": "C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\MauiApp1\\MainPage.xaml",
               "RelativeToolTip": "MauiApp1\\MainPage.xaml",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAGQAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAADwvzcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-08-29T12:21:20.438Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\MauiApp1\\ViewModels\\MainViewModel.cs",
               "RelativeDocumentMoniker": "MauiApp1\\ViewModels\\MainViewModel.cs",
               "ToolTip": "C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\MauiApp1\\ViewModels\\MainViewModel.cs",
               "RelativeToolTip": "MauiApp1\\ViewModels\\MainViewModel.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAswCEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAIwEQAAAB4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-29T12:21:00.201Z"
+              "WhenOpened": "2025-08-29T12:21:00.201Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -174,11 +228,12 @@
               "RelativeToolTip": "MauiApp1\\Services\\GeminiService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-29T12:20:43.914Z"
+              "WhenOpened": "2025-08-29T12:20:43.914Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
               "Title": "IGeminiService.cs",
               "DocumentMoniker": "C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\MauiApp1\\Services\\IGeminiService.cs",
               "RelativeDocumentMoniker": "MauiApp1\\Services\\IGeminiService.cs",
@@ -186,11 +241,12 @@
               "RelativeToolTip": "MauiApp1\\Services\\IGeminiService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-29T12:20:36.992Z"
+              "WhenOpened": "2025-08-29T12:20:36.992Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "GeminiSettings.cs",
               "DocumentMoniker": "C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\MauiApp1\\Models\\GeminiSettings.cs",
               "RelativeDocumentMoniker": "MauiApp1\\Models\\GeminiSettings.cs",
@@ -198,11 +254,12 @@
               "RelativeToolTip": "MauiApp1\\Models\\GeminiSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-29T12:20:18.008Z"
+              "WhenOpened": "2025-08-29T12:20:18.008Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "secrets.json",
               "DocumentMoniker": "C:\\Users\\cspiv\\AppData\\Roaming\\Microsoft\\UserSecrets\\f6c0ed4c-971e-4684-a74a-31116ff73cdd\\secrets.json",
               "RelativeDocumentMoniker": "..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\f6c0ed4c-971e-4684-a74a-31116ff73cdd\\secrets.json",
@@ -214,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\MauiApp1\\MauiProgram.cs",
               "RelativeDocumentMoniker": "MauiApp1\\MauiProgram.cs",
