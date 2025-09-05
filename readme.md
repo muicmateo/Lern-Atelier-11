@@ -49,5 +49,11 @@ So ungefähr möchte ich das die App aussieht (Das wurde komplett mit AI generie
 - [x] Als Benutzer möchte ich eine moderne und intuitive Benutzeroberfläche haben, damit ich mich leicht zurechtfinde und die Anwendung gerne benutze.
 - [ ] Als Spieler möchte ich detaillierte Charakteroptionen wie Hintergrund, Fertigkeiten und Talente auswählen können, damit ich meinen Charakter weiter individualisieren und ihn wirklich einzigartig machen kann. 
 
+️ Heute habe ich die Dropdown Listen erstellt. Zusätzlich habe ich die Hintergrundgeschichte generator zu laufen gebracht. Jetzt erstellt Gemini eine Backstory. Als ich den verbesserten UI auf github gepusht habe, bemerkte ich das meine GEMINI API auf github hochgeladen wurde, also habe ich viel zeit gebraucht um das wieder gut zu machen (Ich musste den API Key komplett löschen und neu generieren)
 
+☝️ Vergessen Sie nicht, Ihren Code auf github hochzuladen
 
+- [ ] Als Spieler möchte ich detaillierte Charakteroptionen wie Hintergrund, Fertigkeiten und Talente auswählen können, damit ich meinen Charakter weiter individualisieren und ihn wirklich einzigartig machen kann. 
+- [ ] Als Spieler möchte ich eine Inventarliste führen und meine Ausrüstung verwalten können, damit ich jederzeit den Überblick über meine Gegenstände und mein Gold behalte und Items einfach anlegen oder ablegen kann.
+- [ ] Als Spieler möchte ich den Level meines Characters sehen
+- [ ] keine ahnung
