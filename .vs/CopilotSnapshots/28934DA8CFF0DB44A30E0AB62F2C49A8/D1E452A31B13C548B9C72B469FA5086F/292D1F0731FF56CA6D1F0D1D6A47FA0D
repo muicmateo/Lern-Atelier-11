@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:MauiApp1.ViewModels"
+             x:DataType="viewModels:MainViewModel"
+             x:Class="MauiApp1.MainPage"
+             BackgroundColor="{StaticResource Background}">
+
+    <Grid>
+        <!-- Background Gradient -->
+        <Rectangle Fill="{StaticResource BackgroundGradient}" />
+        
+        <ScrollView>
+            <VerticalStackLayout Padding="24" Spacing="0">
+
+                <!-- Header Section -->
+                <Frame Style="{StaticResource CardFrame}" Margin="0,0,0,20">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="⚔️" FontSize="48" HorizontalOptions="Center" />
+                        <Label Text="D&amp;D Character Creator" Style="{StaticResource TitleLabel}" Margin="0" />
+                        <Label Text="Create unique backstories for your adventures" 
+                               FontSize="16" 
+                               TextColor="{StaticResource Gray600}" 
+                               HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Character Details Form -->
+                <Frame Style="{StaticResource CardFrame}">
+                    <VerticalStackLayout Spacing="15">
+                        
+                        <!-- Character Name -->
+                        <VerticalStackLayout Spacing="5">
+                            <Label Text="🧙‍♂️ Character Name" Style="{StaticResource SectionLabel}" />
+                            <Entry Placeholder="Enter your character's name"          
+                                   Text="{Binding CharacterName}"
+                                   Style="{StaticResource ModernEntry}" />
+                        </VerticalStackLayout>
+
+                        <!-- Race Selection -->
+                        <VerticalStackLayout Spacing="5">
+                            <Label Text="🏛️ Race" Style="{StaticResource SectionLabel}" />
+                            <Picker Title="Choose your character's race"
+                                    ItemsSource="{Binding Races}"
+                                    SelectedItem="{Binding SelectedRace}"
+                                    Style="{StaticResource ModernPicker}" />
+                        </VerticalStackLayout>
+
+                        <!-- Class Selection -->
+                        <VerticalStackLayout Spacing="5">
+                            <Label Text="⚔️ Class" Style="{StaticResource SectionLabel}" />
+                            <Picker Title="Choose your character's class"
+                                    ItemsSource="{Binding Classes}"
+                                    SelectedItem="{Binding SelectedClass}"
+                                    Style="{StaticResource ModernPicker}" />
+                        </VerticalStackLayout>
+
+                        <!-- Additional Details -->
+                        <VerticalStackLayout Spacing="5">
+                            <Label Text="📜 Additional Details" Style="{StaticResource SectionLabel}" />
+                            <Editor Placeholder="Add any specific details for the backstory... (origin, personality traits, goals, etc.)"
+                                    Text="{Binding Prompt}"
+                                    AutoSize="TextChanges"
+                                    Style="{StaticResource ModernEditor}" />
+                        </VerticalStackLayout>
+
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Generate Button -->
+                <Button Text="✨ Generate Epic Backstory"
+                        Command="{Binding GenerateCommand}"
+                        IsEnabled="{Binding IsNotBusy}"
+                        Style="{StaticResource PrimaryButton}" />
+
+                <!-- Loading Indicator -->
+                <VerticalStackLayout IsVisible="{Binding IsBusy}" Spacing="10" Margin="0,20">
+                    <ActivityIndicator IsRunning="{Binding IsBusy}" 
+                                       Color="{StaticResource Primary}"
+                                       WidthRequest="40"
+                                       HeightRequest="40" />
+                    <Label Text="Creating your character's story..." 
+                           FontSize="14" 
+                           TextColor="{StaticResource Gray600}"
+                           HorizontalOptions="Center" />
+                </VerticalStackLayout>
+
+                <!-- Generated Story -->
+                <Frame IsVisible="{Binding IsStoryGenerated}" 
+                       Style="{StaticResource ResultFrame}">
+                    <VerticalStackLayout Spacing="10">
+                        <HorizontalStackLayout Spacing="10">
+                            <Label Text="📖" FontSize="24" VerticalOptions="Center" />
+                            <Label Text="Your Character's Backstory" 
+                                   FontSize="20" 
+                                   FontAttributes="Bold" 
+                                   TextColor="{StaticResource OnSurface}"
+                                   VerticalOptions="Center" />
+                        </HorizontalStackLayout>
+                        
+                        <BoxView HeightRequest="1" 
+                                 BackgroundColor="{StaticResource Gray300}" 
+                                 Margin="0,5" />
+                        
+                        <Label Text="{Binding GeneratedStory}" 
+                               Style="{StaticResource StoryLabel}" />
+                    </VerticalStackLayout>
+                </Frame>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

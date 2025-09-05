@@ -88,8 +88,7 @@
               "RelativeToolTip": "MauiApp1\\GlobalXmlns.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T11:32:15.375Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T11:32:15.375Z"
             },
             {
               "$type": "Document",
@@ -99,7 +98,7 @@
               "RelativeDocumentMoniker": "MauiApp1\\AppShell.xaml",
               "ToolTip": "C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\MauiApp1\\AppShell.xaml",
               "RelativeToolTip": "MauiApp1\\AppShell.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-09-05T11:32:14.721Z",
               "EditorCaption": ""
@@ -137,7 +136,7 @@
               "RelativeDocumentMoniker": "MauiApp1\\App.xaml",
               "ToolTip": "C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\MauiApp1\\App.xaml",
               "RelativeToolTip": "MauiApp1\\App.xaml",
-              "ViewState": "AgIAABIAAAAAAAAAAIBJwBQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIIAAAAAAAAAAIBJwIQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-08-29T12:55:41.586Z",
               "EditorCaption": ""
@@ -164,8 +163,7 @@
               "RelativeToolTip": "MauiApp1\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-29T12:50:52.741Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-29T12:50:52.741Z"
             },
             {
               "$type": "Document",
@@ -177,8 +175,7 @@
               "RelativeToolTip": "MauiApp1\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAcwEQAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-29T12:32:55.551Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-29T12:32:55.551Z"
             },
             {
               "$type": "Document",
@@ -200,7 +197,7 @@
               "RelativeDocumentMoniker": "MauiApp1\\MainPage.xaml",
               "ToolTip": "C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\MauiApp1\\MainPage.xaml",
               "RelativeToolTip": "MauiApp1\\MainPage.xaml",
-              "ViewState": "AgIAAB0AAAAAAAAAAADwvzcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJUAAAAAAAAAAIBJwJcAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-08-29T12:21:20.438Z",
               "EditorCaption": ""
@@ -213,7 +210,7 @@
               "RelativeDocumentMoniker": "MauiApp1\\ViewModels\\MainViewModel.cs",
               "ToolTip": "C:\\Users\\cspiv\\Desktop\\Lern-Atelier-11\\MauiApp1\\ViewModels\\MainViewModel.cs",
               "RelativeToolTip": "MauiApp1\\ViewModels\\MainViewModel.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAIwEEAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowDcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-29T12:21:00.201Z",
               "EditorCaption": ""
@@ -228,8 +225,7 @@
               "RelativeToolTip": "MauiApp1\\Services\\GeminiService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-29T12:20:43.914Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-29T12:20:43.914Z"
             },
             {
               "$type": "Document",
@@ -241,8 +237,7 @@
               "RelativeToolTip": "MauiApp1\\Services\\IGeminiService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-29T12:20:36.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-29T12:20:36.992Z"
             },
             {
               "$type": "Document",
@@ -254,8 +249,7 @@
               "RelativeToolTip": "MauiApp1\\Models\\GeminiSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-29T12:20:18.008Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-29T12:20:18.008Z"
             },
             {
               "$type": "Document",
@@ -279,8 +273,7 @@
               "RelativeToolTip": "MauiApp1\\MauiProgram.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-29T11:51:06.089Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-29T11:51:06.089Z"
             }
           ]
         }
