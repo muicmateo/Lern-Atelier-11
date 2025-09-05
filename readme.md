@@ -44,7 +44,7 @@ So ungefähr möchte ich das die App aussieht (Das wurde komplett mit AI generie
 
 ## 05.09
 
-- [ ] Als Spieler möchte ich die Rasse und Klasse meines Charakters aus einer Drop-down-Liste auswählen können, damit ich meinen Charakter schnell und einfach nach den offiziellen Regeln definieren kann.
+- [x] Als Spieler möchte ich die Rasse und Klasse meines Charakters aus einer Drop-down-Liste auswählen können, damit ich meinen Charakter schnell und einfach nach den offiziellen Regeln definieren kann.
 - [ ] Als Spieler möchte ich die Wahl haben, eine Hintergrundgeschichte entweder selbst zu schreiben oder von einer KI generieren zu lassen, damit ich entweder meine eigene kreative Vision umsetzen oder bei Bedarf schnell Inspiration finden kann.
 - [ ] Als Benutzer möchte ich eine moderne und intuitive Benutzeroberfläche haben, damit ich mich leicht zurechtfinde und die Anwendung gerne benutze.
 - [ ] Als Spieler möchte ich detaillierte Charakteroptionen wie Hintergrund, Fertigkeiten und Talente auswählen können, damit ich meinen Charakter weiter individualisieren und ihn wirklich einzigartig machen kann. 
