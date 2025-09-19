@@ -1,0 +1,64 @@
+# Lernperiode 11
+
+22.8 bis 26.9.2024
+
+## Grob-Planung
+
+1. Erklären Sie Ihre Projekt-Idee in einem Satz, als müssen Sie einen Investor davon überzeugen.
+Ich entwickle eine, KI-gestützte mobile App, die das Erstellen von Dungeons & Dragons-Charakteren vereinfacht und Spielern direkt in der App hilfreiche Informationen liefert.
+
+3. Erklären Sie, welche technischen Herausforderungen Sie in Ihrem Projekt erwarten.
+Ich will drei verschiedene API's benutzen und zwei von denen müssen irgendwie zusammenarbeiten (function calling).
+
+3. Beschreiben Sie, welche nicht-technischen Aspekte Sie in diesem Projekt besonders üben möchten.
+   UX vielleicht? 
+4. Wie unterscheidet sich dieses Projekt von Ihrem Projekt in 335; und wo ergänzen sich diese Projekte?
+   Für das M335 Projekt habe ich noch nichts geplant. Aber ich werde sicher etwas komplett anderes machen.
+
+
+<img width="412" height="848" alt="image" src="https://github.com/user-attachments/assets/077f5d9a-04c8-4d64-bb97-efde9193f295" />
+So ungefähr möchte ich das die App aussieht (Das wurde komplett mit AI generiert. Ich werde nicht alle features die da sind implementieren) 
+
+
+## 22.8
+
+- [x] .NET MAUI Projekt starten und alles mit GitHub verbinden
+- [ ] Verbindung zur Google Studio AI API einrichten.
+
+
+✍️ Heute habe ich probleme mit der erstellung von .NET MAUI gehabt. Da wir das noch nicht im Modul 335 hatten, wusste ich nicht genau wie das geht. Also verschiebe ich alle Arbeitspakete um eins weiter. (50-100 Wörter)
+
+☝️ Vergessen Sie nicht, einen ersten Code und Skizze auf github hochzuladen!
+
+## 29.8
+
+- [x] Als Entwickler möchte ich eine Verbindung zur Google Studio AI API einrichten, damit ich deren Funktionen zur automatischen Generierung von Spielinhalten nutzen kann.
+- [x] Als Spieler möchte ich eine Ansicht für die Charakter-Erstellung aufrufen können, damit ich mit der Erstellung eines neuen Charakters beginnen kann.
+- [x] (nicht ganz gelöst) Als Spieler möchte ich Textfelder für Namen und weitere Informationen sehen, damit ich die grundlegenden Daten meines Charakters eingeben und personalisieren kann.
+- [ ] Als Entwickler möchte ich die D&D-Character API anbinden, damit die Spieler alle Daten aufrufen können.
+
+✍️ Heute habe ich mich entschieden auf Visual Studio zu wechseln weil VSCode zu kompliziert is mit MAUI. Aber weil ich VS schon sehr lange nicht mehr benutzt habe hatte ich sehr viele probleme mit NuGet packages. Dann habe ich die Gemini API integriert, was gut funktionierte. Danach habe ich die UI geändert sodass es mehr wie Fanstasy aussieht. Nachdem funktionierte die API nicht mehr. Die DnD API wird ich erst später integrieren. (50-100 Wörter)
+
+☝️ Vergessen Sie nicht, Ihren Code auf github hochzuladen
+
+
+## 05.09
+
+- [x] Als Spieler möchte ich die Rasse und Klasse meines Charakters aus einer Drop-down-Liste auswählen können, damit ich meinen Charakter schnell und einfach nach den offiziellen Regeln definieren kann.
+- [ ] Als Spieler möchte ich die Wahl haben, eine Hintergrundgeschichte entweder selbst zu schreiben oder von einer KI generieren zu lassen, damit ich entweder meine eigene kreative Vision umsetzen oder bei Bedarf schnell Inspiration finden kann.
+- [x] Als Benutzer möchte ich eine moderne und intuitive Benutzeroberfläche haben, damit ich mich leicht zurechtfinde und die Anwendung gerne benutze.
+- [ ] Als Spieler möchte ich detaillierte Charakteroptionen wie Hintergrund, Fertigkeiten und Talente auswählen können, damit ich meinen Charakter weiter individualisieren und ihn wirklich einzigartig machen kann. 
+
+️ Heute habe ich die Dropdown Listen erstellt. Zusätzlich habe ich die Hintergrundgeschichte generator zu laufen gebracht. Jetzt erstellt Gemini eine Backstory. Als ich den verbesserten UI auf github gepusht habe, bemerkte ich das meine GEMINI API auf github hochgeladen wurde, also habe ich viel zeit gebraucht um das wieder gut zu machen (Ich musste den API Key komplett löschen und neu generieren)
+
+☝️ Vergessen Sie nicht, Ihren Code auf github hochzuladen
+
+- [ ] Als Spieler möchte ich detaillierte Charakteroptionen wie Hintergrund, Fertigkeiten und Talente auswählen können, damit ich meinen Charakter weiter individualisieren und ihn wirklich einzigartig machen kann. 
+- [ ] Als Spieler möchte ich eine Inventarliste führen und meine Ausrüstung verwalten können, damit ich jederzeit den Überblick über meine Gegenstände und mein Gold behalte und Items einfach anlegen oder ablegen kann.
+- [x] Als Spieler möchte ich den Level meines Characters sehen
+- [ ] Als Spieler möchte ich meine Charakterattribute (Stärke, Geschicklichkeit, Konstitution, Intelligenz, Weisheit, Charisma) mit Würfelwürfen oder Punkteverteilung bestimmen können, damit ich die Grundwerte meines Charakters nach meinen Vorstellungen gestalten kann.
+
+
+- [ ] Als Spieler möchte ich meine verfügbaren Zaubersprüche und deren Details anzeigen lassen können, damit ich während des Spiels schnell nachschlagen kann, welche magischen Fähigkeiten mein Charakter beherrscht.
+- [ ] Als Spieler möchte ich meine Charaktertrefferpunkte (HP), Rüstungsklasse (AC) und andere wichtige Kampfwerte sehen können, damit ich jederzeit den Kampfstatus meines Charakters im Blick behalte.
+- [ ] Als Spieler möchte ich meine Charakterdaten speichern und mehrere verschiedene Charaktere verwalten können, damit ich zwischen verschiedenen Kampagnen und Charakteren wechseln kann.
