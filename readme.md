@@ -58,6 +58,9 @@ So ungefähr möchte ich das die App aussieht (Das wurde komplett mit AI generie
 - [x] Als Spieler möchte ich den Level meines Characters sehen
 - [ ] Als Spieler möchte ich meine Charakterattribute (Stärke, Geschicklichkeit, Konstitution, Intelligenz, Weisheit, Charisma) mit Würfelwürfen oder Punkteverteilung bestimmen können, damit ich die Grundwerte meines Charakters nach meinen Vorstellungen gestalten kann.
 
+Heute habe ich nicht die Arbeitspakete angeschaut aber trotzdem viel gemacht. Viele neue dropdowns erstellt für die verschiedenen character creation sachen. Den Prompt für Gemini habe ich auch angepasst aber jetzt dauert die generation sehr sehr lang. Ich habe mir überlegt auch ein Image generation button einfügen da man das auch einfacht mit Gemini API machen kann. 
+
+## 26.09
 
 - [ ] Als Spieler möchte ich meine verfügbaren Zaubersprüche und deren Details anzeigen lassen können, damit ich während des Spiels schnell nachschlagen kann, welche magischen Fähigkeiten mein Charakter beherrscht.
 - [ ] Als Spieler möchte ich meine Charaktertrefferpunkte (HP), Rüstungsklasse (AC) und andere wichtige Kampfwerte sehen können, damit ich jederzeit den Kampfstatus meines Charakters im Blick behalte.
