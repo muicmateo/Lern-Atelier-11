@@ -18,16 +18,22 @@
                     <VerticalStackLayout Spacing="10">
                         <Label Text="⚔️" FontSize="48" HorizontalOptions="Center" />
                         <Label Text="D&amp;D Character Creator" Style="{StaticResource TitleLabel}" Margin="0" />
-                        <Label Text="Create unique backstories for your adventures" 
+                        <Label Text="Create unique and detailed characters for your adventures" 
                                FontSize="16" 
                                TextColor="{StaticResource Gray600}" 
                                HorizontalOptions="Center" />
                     </VerticalStackLayout>
                 </Frame>
 
-                <!-- Character Details Form -->
+                <!-- Basic Character Details -->
                 <Frame Style="{StaticResource CardFrame}">
                     <VerticalStackLayout Spacing="15">
+                        
+                        <Label Text="📋 Basic Information" 
+                               FontSize="18" 
+                               FontAttributes="Bold" 
+                               TextColor="{StaticResource Primary}" 
+                               Margin="0,0,0,10" />
                         
                         <!-- Character Name -->
                         <VerticalStackLayout Spacing="5">
@@ -37,77 +43,528 @@
                                    Style="{StaticResource ModernEntry}" />
                         </VerticalStackLayout>
 
-                        <!-- Race Selection -->
-                        <VerticalStackLayout Spacing="5">
-                            <Label Text="🏛️ Race" Style="{StaticResource SectionLabel}" />
-                            <Border BackgroundColor="{StaticResource Surface}"
-                                    Stroke="{StaticResource Gray300}"
-                                    StrokeThickness="1"
-                                    HeightRequest="50"
-                                    Padding="15,0">
-                                <Border.StrokeShape>
-                                    <RoundRectangle CornerRadius="8" />
-                                </Border.StrokeShape>
-                                <Picker Title="Choose your character's race"
-                                        ItemsSource="{Binding Races}"
+                        <!-- Race and Gender Row -->
+                        <Grid ColumnDefinitions="*,10,*" ColumnSpacing="10">
+                            <!-- Race Selection -->
+                            <VerticalStackLayout Grid.Column="0" Spacing="5">
+                                <Label Text="🏛️ Race" Style="{StaticResource SectionLabel}" />
+                                <Picker ItemsSource="{Binding Races}"
                                         SelectedItem="{Binding SelectedRace}"
-                                        BackgroundColor="Transparent"
+                                        BackgroundColor="{StaticResource Surface}"
                                         TextColor="{StaticResource OnSurface}"
-                                        TitleColor="{StaticResource Gray500}"
                                         FontSize="16"
-                                        VerticalOptions="Center" />
-                            </Border>
-                        </VerticalStackLayout>
+                                        HeightRequest="50"
+                                        VerticalOptions="FillAndExpand"
+                                        HorizontalOptions="FillAndExpand">
+                                    <Picker.Title>
+                                        <x:String>Choose race</x:String>
+                                    </Picker.Title>
+                                </Picker>
+                            </VerticalStackLayout>
 
-                        <!-- Class Selection -->
-                        <VerticalStackLayout Spacing="5">
-                            <Label Text="⚔️ Class" Style="{StaticResource SectionLabel}" />
-                            <Border BackgroundColor="{StaticResource Surface}"
-                                    Stroke="{StaticResource Gray300}"
-                                    StrokeThickness="1"
-                                    HeightRequest="50"
-                                    Padding="15,0">
-                                <Border.StrokeShape>
-                                    <RoundRectangle CornerRadius="8" />
-                                </Border.StrokeShape>
-                                <Picker Title="Choose your character's class"
-                                        ItemsSource="{Binding Classes}"
+                            <!-- Gender Selection -->
+                            <VerticalStackLayout Grid.Column="2" Spacing="5">
+                                <Label Text="👤 Gender" Style="{StaticResource SectionLabel}" />
+                                <Picker ItemsSource="{Binding Genders}"
+                                        SelectedItem="{Binding SelectedGender}"
+                                        BackgroundColor="{StaticResource Surface}"
+                                        TextColor="{StaticResource OnSurface}"
+                                        FontSize="16"
+                                        HeightRequest="50"
+                                        VerticalOptions="FillAndExpand"
+                                        HorizontalOptions="FillAndExpand">
+                                    <Picker.Title>
+                                        <x:String>Choose gender</x:String>
+                                    </Picker.Title>
+                                </Picker>
+                            </VerticalStackLayout>
+                        </Grid>
+
+                        <!-- Class and Level Row -->
+                        <Grid ColumnDefinitions="*,10,*" ColumnSpacing="10">
+                            <!-- Class Selection -->
+                            <VerticalStackLayout Grid.Column="0" Spacing="5">
+                                <Label Text="⚔️ Class" Style="{StaticResource SectionLabel}" />
+                                <Picker ItemsSource="{Binding Classes}"
                                         SelectedItem="{Binding SelectedClass}"
-                                        BackgroundColor="Transparent"
+                                        BackgroundColor="{StaticResource Surface}"
                                         TextColor="{StaticResource OnSurface}"
-                                        TitleColor="{StaticResource Gray500}"
                                         FontSize="16"
-                                        VerticalOptions="Center" />
-                            </Border>
-                        </VerticalStackLayout>
+                                        HeightRequest="50"
+                                        VerticalOptions="FillAndExpand"
+                                        HorizontalOptions="FillAndExpand">
+                                    <Picker.Title>
+                                        <x:String>Choose class</x:String>
+                                    </Picker.Title>
+                                </Picker>
+                            </VerticalStackLayout>
 
-                        <!-- Character Level -->
+                            <!-- Level Selection -->
+                            <VerticalStackLayout Grid.Column="2" Spacing="5">
+                                <Label Text="📈 Level" Style="{StaticResource SectionLabel}" />
+                                <Picker ItemsSource="{Binding Levels}"
+                                        SelectedItem="{Binding SelectedLevel}"
+                                        BackgroundColor="{StaticResource Surface}"
+                                        TextColor="{StaticResource OnSurface}"
+                                        FontSize="16"
+                                        HeightRequest="50"
+                                        VerticalOptions="FillAndExpand"
+                                        HorizontalOptions="FillAndExpand">
+                                    <Picker.Title>
+                                        <x:String>Choose level</x:String>
+                                    </Picker.Title>
+                                </Picker>
+                            </VerticalStackLayout>
+                        </Grid>
+
+                        <!-- Background Selection -->
                         <VerticalStackLayout Spacing="5">
-                            <Label Text="⭐ Level" Style="{StaticResource SectionLabel}" />
-                            <Border BackgroundColor="{StaticResource Surface}"
-                                    Stroke="{StaticResource Gray300}"
-                                    StrokeThickness="1"
+                            <Label Text="🎭 Background" Style="{StaticResource SectionLabel}" />
+                            <Picker ItemsSource="{Binding Backgrounds}"
+                                    SelectedItem="{Binding SelectedBackground}"
+                                    BackgroundColor="{StaticResource Surface}"
+                                    TextColor="{StaticResource OnSurface}"
+                                    FontSize="16"
                                     HeightRequest="50"
-                                    Padding="15,0">
-                                <Border.StrokeShape>
-                                    <RoundRectangle CornerRadius="8" />
-                                </Border.StrokeShape>
-                                <Stepper Value="{Binding CharacterLevel}"
-                                         Minimum="1"
-                                         Maximum="20"
-                                         Increment="1"
-                                         VerticalOptions="Center" />
-                            </Border>
-                            <Label Text="{Binding CharacterLevel, StringFormat='Level: {0}'}"
-                                   FontSize="14"
-                                   TextColor="{StaticResource Primary}"
-                                   FontAttributes="Bold"
-                                   HorizontalOptions="Center" />
+                                    VerticalOptions="FillAndExpand"
+                                    HorizontalOptions="FillAndExpand">
+                                <Picker.Title>
+                                    <x:String>Choose background</x:String>
+                                </Picker.Title>
+                            </Picker>
                         </VerticalStackLayout>
 
-                        <!-- Additional Details -->
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Character Attributes -->
+                <Frame Style="{StaticResource CardFrame}">
+                    <VerticalStackLayout Spacing="15">
+                        
+                        <HorizontalStackLayout Spacing="10" Margin="0,0,0,10">
+                            <Label Text="💪 Character Attributes" 
+                                   FontSize="18" 
+                                   FontAttributes="Bold" 
+                                   TextColor="{StaticResource PrimaryDark}" 
+                                   VerticalOptions="Center" />
+                            
+                            <Picker ItemsSource="{Binding AttributeMethods}"
+                                    SelectedItem="{Binding SelectedAttributeMethod}"
+                                    BackgroundColor="{StaticResource Surface}"
+                                    TextColor="{StaticResource OnSurface}"
+                                    FontSize="14"
+                                    HeightRequest="40"
+                                    WidthRequest="120"
+                                    VerticalOptions="Center" />
+                        </HorizontalStackLayout>
+
+                        <!-- Point Buy Info -->
+                        <HorizontalStackLayout Spacing="10" IsVisible="{Binding IsPointBuyMode}">
+                            <Label Text="📊 Points Remaining:" 
+                                   FontSize="14" 
+                                   FontAttributes="Bold" 
+                                   TextColor="{StaticResource Gray700}" 
+                                   VerticalOptions="Center" />
+                            <Label Text="{Binding RemainingPoints}" 
+                                   FontSize="16" 
+                                   FontAttributes="Bold" 
+                                   TextColor="{Binding RemainingPoints, Converter={StaticResource IsStringNotNullOrEmptyConverter}}" 
+                                   VerticalOptions="Center" />
+                        </HorizontalStackLayout>
+
+                        <!-- Dice Roll Controls -->
+                        <HorizontalStackLayout Spacing="10" IsVisible="{Binding IsDiceRollMode}">
+                            <Button Text="🎲 Roll All Attributes"
+                                    Command="{Binding RollAllAttributesCommand}"
+                                    BackgroundColor="{StaticResource Secondary}"
+                                    TextColor="White"
+                                    FontSize="14"
+                                    HeightRequest="40"
+                                    CornerRadius="8"
+                                    Padding="15,0" />
+                        </HorizontalStackLayout>
+
+                        <!-- Attributes Grid -->
+                        <Grid ColumnDefinitions="*,*" ColumnSpacing="15" RowSpacing="10">
+                            
+                            <!-- Strength -->
+                            <VerticalStackLayout Grid.Column="0" Grid.Row="0" Spacing="5">
+                                <Label Text="💪 Strength" Style="{StaticResource SectionLabel}" FontSize="14" />
+                                <HorizontalStackLayout Spacing="10">
+                                    <Button Text="-" 
+                                            Command="{Binding DecreaseAttributeCommand}" 
+                                            CommandParameter="strength"
+                                            IsVisible="{Binding IsPointBuyMode}"
+                                            BackgroundColor="{StaticResource Gray500}"
+                                            TextColor="White"
+                                            FontSize="16"
+                                            WidthRequest="30"
+                                            HeightRequest="30"
+                                            CornerRadius="15" />
+                                    
+                                    <Label Text="{Binding Strength}" 
+                                           FontSize="18" 
+                                           FontAttributes="Bold" 
+                                           TextColor="{StaticResource OnSurface}"
+                                           VerticalOptions="Center"
+                                           HorizontalOptions="Center"
+                                           WidthRequest="30" />
+                                    
+                                    <Button Text="+" 
+                                            Command="{Binding IncreaseAttributeCommand}" 
+                                            CommandParameter="strength"
+                                            IsVisible="{Binding IsPointBuyMode}"
+                                            BackgroundColor="{StaticResource Primary}"
+                                            TextColor="White"
+                                            FontSize="16"
+                                            WidthRequest="30"
+                                            HeightRequest="30"
+                                            CornerRadius="15" />
+                                    
+                                    <Button Text="🎲" 
+                                            Command="{Binding RollSingleAttributeCommand}" 
+                                            CommandParameter="strength"
+                                            IsVisible="{Binding IsDiceRollMode}"
+                                            BackgroundColor="{StaticResource Secondary}"
+                                            TextColor="White"
+                                            FontSize="12"
+                                            WidthRequest="30"
+                                            HeightRequest="30"
+                                            CornerRadius="15" />
+                                </HorizontalStackLayout>
+                            </VerticalStackLayout>
+
+                            <!-- Dexterity -->
+                            <VerticalStackLayout Grid.Column="1" Grid.Row="0" Spacing="5">
+                                <Label Text="🏃 Dexterity" Style="{StaticResource SectionLabel}" FontSize="14" />
+                                <HorizontalStackLayout Spacing="10">
+                                    <Button Text="-" 
+                                            Command="{Binding DecreaseAttributeCommand}" 
+                                            CommandParameter="dexterity"
+                                            IsVisible="{Binding IsPointBuyMode}"
+                                            BackgroundColor="{StaticResource Gray500}"
+                                            TextColor="White"
+                                            FontSize="16"
+                                            WidthRequest="30"
+                                            HeightRequest="30"
+                                            CornerRadius="15" />
+                                    
+                                    <Label Text="{Binding Dexterity}" 
+                                           FontSize="18" 
+                                           FontAttributes="Bold" 
+                                           TextColor="{StaticResource OnSurface}"
+                                           VerticalOptions="Center"
+                                           HorizontalOptions="Center"
+                                           WidthRequest="30" />
+                                    
+                                    <Button Text="+" 
+                                            Command="{Binding IncreaseAttributeCommand}" 
+                                            CommandParameter="dexterity"
+                                            IsVisible="{Binding IsPointBuyMode}"
+                                            BackgroundColor="{StaticResource Primary}"
+                                            TextColor="White"
+                                            FontSize="16"
+                                            WidthRequest="30"
+                                            HeightRequest="30"
+                                            CornerRadius="15" />
+                                    
+                                    <Button Text="🎲" 
+                                            Command="{Binding RollSingleAttributeCommand}" 
+                                            CommandParameter="dexterity"
+                                            IsVisible="{Binding IsDiceRollMode}"
+                                            BackgroundColor="{StaticResource Secondary}"
+                                            TextColor="White"
+                                            FontSize="12"
+                                            WidthRequest="30"
+                                            HeightRequest="30"
+                                            CornerRadius="15" />
+                                </HorizontalStackLayout>
+                            </VerticalStackLayout>
+
+                            <!-- Constitution -->
+                            <VerticalStackLayout Grid.Column="0" Grid.Row="1" Spacing="5">
+                                <Label Text="🛡️ Constitution" Style="{StaticResource SectionLabel}" FontSize="14" />
+                                <HorizontalStackLayout Spacing="10">
+                                    <Button Text="-" 
+                                            Command="{Binding DecreaseAttributeCommand}" 
+                                            CommandParameter="constitution"
+                                            IsVisible="{Binding IsPointBuyMode}"
+                                            BackgroundColor="{StaticResource Gray500}"
+                                            TextColor="White"
+                                            FontSize="16"
+                                            WidthRequest="30"
+                                            HeightRequest="30"
+                                            CornerRadius="15" />
+                                    
+                                    <Label Text="{Binding Constitution}" 
+                                           FontSize="18" 
+                                           FontAttributes="Bold" 
+                                           TextColor="{StaticResource OnSurface}"
+                                           VerticalOptions="Center"
+                                           HorizontalOptions="Center"
+                                           WidthRequest="30" />
+                                    
+                                    <Button Text="+" 
+                                            Command="{Binding IncreaseAttributeCommand}" 
+                                            CommandParameter="constitution"
+                                            IsVisible="{Binding IsPointBuyMode}"
+                                            BackgroundColor="{StaticResource Primary}"
+                                            TextColor="White"
+                                            FontSize="16"
+                                            WidthRequest="30"
+                                            HeightRequest="30"
+                                            CornerRadius="15" />
+                                    
+                                    <Button Text="🎲" 
+                                            Command="{Binding RollSingleAttributeCommand}" 
+                                            CommandParameter="constitution"
+                                            IsVisible="{Binding IsDiceRollMode}"
+                                            BackgroundColor="{StaticResource Secondary}"
+                                            TextColor="White"
+                                            FontSize="12"
+                                            WidthRequest="30"
+                                            HeightRequest="30"
+                                            CornerRadius="15" />
+                                </HorizontalStackLayout>
+                            </VerticalStackLayout>
+
+                            <!-- Intelligence -->
+                            <VerticalStackLayout Grid.Column="1" Grid.Row="1" Spacing="5">
+                                <Label Text="🧠 Intelligence" Style="{StaticResource SectionLabel}" FontSize="14" />
+                                <HorizontalStackLayout Spacing="10">
+                                    <Button Text="-" 
+                                            Command="{Binding DecreaseAttributeCommand}" 
+                                            CommandParameter="intelligence"
+                                            IsVisible="{Binding IsPointBuyMode}"
+                                            BackgroundColor="{StaticResource Gray500}"
+                                            TextColor="White"
+                                            FontSize="16"
+                                            WidthRequest="30"
+                                            HeightRequest="30"
+                                            CornerRadius="15" />
+                                    
+                                    <Label Text="{Binding Intelligence}" 
+                                           FontSize="18" 
+                                           FontAttributes="Bold" 
+                                           TextColor="{StaticResource OnSurface}"
+                                           VerticalOptions="Center"
+                                           HorizontalOptions="Center"
+                                           WidthRequest="30" />
+                                    
+                                    <Button Text="+" 
+                                            Command="{Binding IncreaseAttributeCommand}" 
+                                            CommandParameter="intelligence"
+                                            IsVisible="{Binding IsPointBuyMode}"
+                                            BackgroundColor="{StaticResource Primary}"
+                                            TextColor="White"
+                                            FontSize="16"
+                                            WidthRequest="30"
+                                            HeightRequest="30"
+                                            CornerRadius="15" />
+                                    
+                                    <Button Text="🎲" 
+                                            Command="{Binding RollSingleAttributeCommand}" 
+                                            CommandParameter="intelligence"
+                                            IsVisible="{Binding IsDiceRollMode}"
+                                            BackgroundColor="{StaticResource Secondary}"
+                                            TextColor="White"
+                                            FontSize="12"
+                                            WidthRequest="30"
+                                            HeightRequest="30"
+                                            CornerRadius="15" />
+                                </HorizontalStackLayout>
+                            </VerticalStackLayout>
+
+                            <!-- Wisdom -->
+                            <VerticalStackLayout Grid.Column="0" Grid.Row="2" Spacing="5">
+                                <Label Text="🦉 Wisdom" Style="{StaticResource SectionLabel}" FontSize="14" />
+                                <HorizontalStackLayout Spacing="10">
+                                    <Button Text="-" 
+                                            Command="{Binding DecreaseAttributeCommand}" 
+                                            CommandParameter="wisdom"
+                                            IsVisible="{Binding IsPointBuyMode}"
+                                            BackgroundColor="{StaticResource Gray500}"
+                                            TextColor="White"
+                                            FontSize="16"
+                                            WidthRequest="30"
+                                            HeightRequest="30"
+                                            CornerRadius="15" />
+                                    
+                                    <Label Text="{Binding Wisdom}" 
+                                           FontSize="18" 
+                                           FontAttributes="Bold" 
+                                           TextColor="{StaticResource OnSurface}"
+                                           VerticalOptions="Center"
+                                           HorizontalOptions="Center"
+                                           WidthRequest="30" />
+                                    
+                                    <Button Text="+" 
+                                            Command="{Binding IncreaseAttributeCommand}" 
+                                            CommandParameter="wisdom"
+                                            IsVisible="{Binding IsPointBuyMode}"
+                                            BackgroundColor="{StaticResource Primary}"
+                                            TextColor="White"
+                                            FontSize="16"
+                                            WidthRequest="30"
+                                            HeightRequest="30"
+                                            CornerRadius="15" />
+                                    
+                                    <Button Text="🎲" 
+                                            Command="{Binding RollSingleAttributeCommand}" 
+                                            CommandParameter="wisdom"
+                                            IsVisible="{Binding IsDiceRollMode}"
+                                            BackgroundColor="{StaticResource Secondary}"
+                                            TextColor="White"
+                                            FontSize="12"
+                                            WidthRequest="30"
+                                            HeightRequest="30"
+                                            CornerRadius="15" />
+                                </HorizontalStackLayout>
+                            </VerticalStackLayout>
+
+                            <!-- Charisma -->
+                            <VerticalStackLayout Grid.Column="1" Grid.Row="2" Spacing="5">
+                                <Label Text="✨ Charisma" Style="{StaticResource SectionLabel}" FontSize="14" />
+                                <HorizontalStackLayout Spacing="10">
+                                    <Button Text="-" 
+                                            Command="{Binding DecreaseAttributeCommand}" 
+                                            CommandParameter="charisma"
+                                            IsVisible="{Binding IsPointBuyMode}"
+                                            BackgroundColor="{StaticResource Gray500}"
+                                            TextColor="White"
+                                            FontSize="16"
+                                            WidthRequest="30"
+                                            HeightRequest="30"
+                                            CornerRadius="15" />
+                                    
+                                    <Label Text="{Binding Charisma}" 
+                                           FontSize="18" 
+                                           FontAttributes="Bold" 
+                                           TextColor="{StaticResource OnSurface}"
+                                           VerticalOptions="Center"
+                                           HorizontalOptions="Center"
+                                           WidthRequest="30" />
+                                    
+                                    <Button Text="+" 
+                                            Command="{Binding IncreaseAttributeCommand}" 
+                                            CommandParameter="charisma"
+                                            IsVisible="{Binding IsPointBuyMode}"
+                                            BackgroundColor="{StaticResource Primary}"
+                                            TextColor="White"
+                                            FontSize="16"
+                                            WidthRequest="30"
+                                            HeightRequest="30"
+                                            CornerRadius="15" />
+                                    
+                                    <Button Text="🎲" 
+                                            Command="{Binding RollSingleAttributeCommand}" 
+                                            CommandParameter="charisma"
+                                            IsVisible="{Binding IsDiceRollMode}"
+                                            BackgroundColor="{StaticResource Secondary}"
+                                            TextColor="White"
+                                            FontSize="12"
+                                            WidthRequest="30"
+                                            HeightRequest="30"
+                                            CornerRadius="15" />
+                                </HorizontalStackLayout>
+                            </VerticalStackLayout>
+
+                        </Grid>
+
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Skills and Talents -->
+                <Frame Style="{StaticResource CardFrame}">
+                    <VerticalStackLayout Spacing="15">
+                        
+                        <Label Text="🎯 Skills &amp; Talents" 
+                               FontSize="18" 
+                               FontAttributes="Bold" 
+                               TextColor="{StaticResource Secondary}" 
+                               Margin="0,0,0,10" />
+
+                        <!-- Skills Selection -->
                         <VerticalStackLayout Spacing="5">
-                            <Label Text="📜 Additional Details" Style="{StaticResource SectionLabel}" />
+                            <Label Text="🛠️ Primary Skill" Style="{StaticResource SectionLabel}" />
+                            <Picker ItemsSource="{Binding Skills}"
+                                    SelectedItem="{Binding SelectedSkill1}"
+                                    BackgroundColor="{StaticResource Surface}"
+                                    TextColor="{StaticResource OnSurface}"
+                                    FontSize="16"
+                                    HeightRequest="50"
+                                    VerticalOptions="FillAndExpand"
+                                    HorizontalOptions="FillAndExpand">
+                                <Picker.Title>
+                                    <x:String>Choose primary skill</x:String>
+                                </Picker.Title>
+                            </Picker>
+                        </VerticalStackLayout>
+
+                        <VerticalStackLayout Spacing="5">
+                            <Label Text="🎪 Secondary Skill" Style="{StaticResource SectionLabel}" />
+                            <Picker ItemsSource="{Binding Skills}"
+                                    SelectedItem="{Binding SelectedSkill2}"
+                                    BackgroundColor="{StaticResource Surface}"
+                                    TextColor="{StaticResource OnSurface}"
+                                    FontSize="16"
+                                    HeightRequest="50"
+                                    VerticalOptions="FillAndExpand"
+                                    HorizontalOptions="FillAndExpand">
+                                <Picker.Title>
+                                    <x:String>Choose secondary skill</x:String>
+                                </Picker.Title>
+                            </Picker>
+                        </VerticalStackLayout>
+
+                        <VerticalStackLayout Spacing="5">
+                            <Label Text="🎨 Tertiary Skill" Style="{StaticResource SectionLabel}" />
+                            <Picker ItemsSource="{Binding Skills}"
+                                    SelectedItem="{Binding SelectedSkill3}"
+                                    BackgroundColor="{StaticResource Surface}"
+                                    TextColor="{StaticResource OnSurface}"
+                                    FontSize="16"
+                                    HeightRequest="50"
+                                    VerticalOptions="FillAndExpand"
+                                    HorizontalOptions="FillAndExpand">
+                                <Picker.Title>
+                                    <x:String>Choose tertiary skill</x:String>
+                                </Picker.Title>
+                            </Picker>
+                        </VerticalStackLayout>
+
+                        <!-- Talent Selection -->
+                        <VerticalStackLayout Spacing="5">
+                            <Label Text="⭐ Special Talent/Feat" Style="{StaticResource SectionLabel}" />
+                            <Picker ItemsSource="{Binding Talents}"
+                                    SelectedItem="{Binding SelectedTalent}"
+                                    BackgroundColor="{StaticResource Surface}"
+                                    TextColor="{StaticResource OnSurface}"
+                                    FontSize="16"
+                                    HeightRequest="50"
+                                    VerticalOptions="FillAndExpand"
+                                    HorizontalOptions="FillAndExpand">
+                                <Picker.Title>
+                                    <x:String>Choose talent</x:String>
+                                </Picker.Title>
+                            </Picker>
+                        </VerticalStackLayout>
+
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Additional Details -->
+                <Frame Style="{StaticResource CardFrame}">
+                    <VerticalStackLayout Spacing="15">
+                        
+                        <Label Text="📜 Additional Details" 
+                               FontSize="18" 
+                               FontAttributes="Bold" 
+                               TextColor="{StaticResource Accent}" 
+                               Margin="0,0,0,10" />
+
+                        <VerticalStackLayout Spacing="5">
+                            <Label Text="✍️ Custom Requirements" Style="{StaticResource SectionLabel}" />
                             <Border BackgroundColor="{StaticResource Surface}"
                                     Stroke="{StaticResource Gray300}"
                                     StrokeThickness="1"
@@ -116,7 +573,7 @@
                                 <Border.StrokeShape>
                                     <RoundRectangle CornerRadius="8" />
                                 </Border.StrokeShape>
-                                <Editor Placeholder="Add any specific details for the backstory... (origin, personality traits, goals, etc.)"
+                                <Editor Placeholder="Add specific details like personality traits, goals, fears, or special story elements you want included..."
                                         Text="{Binding Prompt}"
                                         AutoSize="TextChanges"
                                         BackgroundColor="Transparent"
@@ -129,11 +586,26 @@
                     </VerticalStackLayout>
                 </Frame>
 
-                <!-- Generate Button -->
-                <Button Text="✨ Generate Epic Backstory"
-                        Command="{Binding GenerateCommand}"
-                        IsEnabled="{Binding IsNotBusy}"
-                        Style="{StaticResource PrimaryButton}" />
+                <!-- Action Buttons -->
+                <VerticalStackLayout Spacing="10">
+                    <!-- Generate Button -->
+                    <Button Text="✨ Generate Epic Backstory"
+                            Command="{Binding GenerateCommand}"
+                            IsEnabled="{Binding IsNotBusy}"
+                            Style="{StaticResource PrimaryButton}" />
+
+                    <!-- Export Button -->
+                    <Button Text="📋 Export Character Sheet"
+                            Command="{Binding ExportCharacterCommand}"
+                            IsVisible="{Binding IsStoryGenerated}"
+                            BackgroundColor="{StaticResource Accent}"
+                            TextColor="White"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            HeightRequest="50"
+                            CornerRadius="12"
+                            Margin="0,0,0,10" />
+                </VerticalStackLayout>
 
                 <!-- Loading Indicator -->
                 <VerticalStackLayout IsVisible="{Binding IsBusy}" Spacing="10" Margin="0,20">
@@ -141,7 +613,7 @@
                                        Color="{StaticResource Primary}"
                                        WidthRequest="40"
                                        HeightRequest="40" />
-                    <Label Text="Creating your character's story..." 
+                    <Label Text="Creating your detailed character story..." 
                            FontSize="14" 
                            TextColor="{StaticResource Gray600}"
                            HorizontalOptions="Center" />
